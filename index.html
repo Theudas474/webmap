@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 77%;
+            height: 99%;
+            margin-top: 1%;
+            margin-left: 1%;
+            margin-right: 23%;
+            margin-bottom: 0;
+            padding: 0;
+        }
+#map {
+    position: absolute;
+    top: 0;
+    left: 325px;
+    right:325px;
+    bottom: 0;
+}
+        </style>
+        <title></title>
+    </head>
+    <body>
+<input type="text" id="search" placeholder="Rechercher une école..." style="position:absolute; top:30px; right:10px; padding:5px; z-index:1000;">
+
+<div id="sidebar" style="width: 300px; height: 100vh; position: absolute; left: 0; top: 0; background: white; padding: 10px; overflow-y: auto; box-shadow: 2px 0px 5px rgba(0,0,0,0.2);">
+    <h2>Abomey's Shool</h2>
+     <p>
+            « Abomey est une ville et une commune du Sud-Bénin, située à 145 km de Cotonou, qui est la préfecture du département du Zou, dont elle est le chef-lieu. Fondée au XVIIe siècle par le roi Houégbadja, c'est la capitale historique de l'ancien royaume du Dahomey de 1625 à 1894 » (Wikipédia).
+        </p>
+        <p>
+            Cette carte que vous visitez présente la localisation de plusieurs écoles primaires et maternelles dans cette ville. C'est une réalisation de Achille A. et Theudas T., étudiants en 3e année de Licence en Génie Géomatique Appliquée option SIG-TÉLÉDÉTECTION à l'ENSTP-Abomey, année académique 2024-2025, sous l'encadrement de Dr Abib Sabi OROU BOGO, enseignant de Webmapping et Géoportail Web.
+        </p>
+         <p>
+        CONTACTEZ-NOUS
+        </p>
+        <p>
+        Achille : +2290151262163
+        </p>
+        <p>
+        Theudas : +2290159250209
+        </p>
+    
+<p id="rédaction">Rédaction: Theudas T., avril 2025</p>
+</div>
+   
+
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/ArrondissementsdelacommunedAbomey_1.js"></script><script src="layers/Ecole_Abomey_2.js"></script>
+        <script src="styles/ArrondissementsdelacommunedAbomey_1_style.js"></script><script src="styles/Ecole_Abomey_2_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
